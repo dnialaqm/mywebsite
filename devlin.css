@@ -1,0 +1,414 @@
+@charset "utf-8";
+/* CSS Document */
+/*------------------------------DEFAULT----------------------------------*/
+
+*{
+ 	margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about, .services, .skills, .teams, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content, 
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+/*------------------------------LOGO----------------------------------*/
+.logo img{
+	
+	float: left;
+	width: 80px;
+	height :auto;
+    top: 9%;
+    left: 1%;
+    position: absolute;
+}
+/*------------------------------TITLE----------------------------------*/
+.title {
+	    top: 30%;
+    left: 6%;
+	    color: white;
+	font-family:"Arial";
+    position: absolute;
+}
+.title2 {
+	    top: 30%;
+    left: 8%;
+	    color: white;
+	font-family:"Selima";
+    position: absolute;
+}
+/*------------------------------HEADER----------------------------------*/
+.header {
+	position:absolute; 
+  background-color: #000000;
+  padding: 50px;
+	width:1000px;
+  text-align: left;
+	top: 0%;
+    left: 0%;
+
+}
+/*------------------------------NAVIGATION----------------------------------*/
+.navbar{
+		font-family:  montserrat;
+    top: 20%;
+    left: 67%;
+	 background-color: #000000;
+    position: absolute;
+	font-size:20;
+	 text-align: center;
+	list-style-type:none;
+	margin-top:25px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+	transition:0.6s ease;
+	
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid grey;
+	background-color: #47444;
+	color:#000;
+}
+
+/*------------------------------HOME SECTION----------------------------------*/
+#home{
+	
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+#home::before{
+    content: "";
+	
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../wallhaven-0p7rqp.jpg") ;
+    height: 1100px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.0;
+}
+.heading{
+    color: white;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,1.3);
+}
+
+
+/*------------------------------EMAIL----------------------------------*/
+
+/*------------------------------ABOUT ME ----------------------------------*/
+
+#about{
+	background-color: #FFFFFF;
+    display: flex;
+	font-family: montserrat;
+    flex-direction: column;
+    text-align: justify;
+    height: 100%;
+}
+#about h1{
+    color: black;
+	    font-family: 'Poppins', sans-serif;
+    margin: 55px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.about img{
+    width: 500px;
+    height: 400px;
+    padding: 0px 30px;
+}
+.name{
+	    color: black;
+    padding: 10px;
+}
+.name h2{
+    font-size: 2rem;
+}
+.name p{
+    font-size: 1.2rem;
+}
+.row icon {
+	justify-content: center;
+}
+/*------------------------------FOOTER----------------------------------*/
+.footer{
+	font-family:  montserrat;
+  background-color: #000000;
+	color:white;
+   padding: 100px;
+	width: 1065px;
+	 position: absolute;
+	font-size:20;
+	margin-bottom:25px;
+
+}
+/*------------------------------ICON----------------------------------*/
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-facebook {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+.fa-twitter {
+    color: white;
+}
+.fa-youtube {
+    color: white;
+}
+/*------------------------------SKILLS----------------------------------*/
+.skills{
+	background-color: aliceblue;
+}
+.skills .title{
+	top:115%;
+	left:47%;
+position: absolute;
+	color: black;
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 70%;
+}
+.skills-content .right .js::before{
+    width: 50%;
+}
+.skills-content .right .java::before{
+    width: 80%;
+}
+.skills-content .right .c::before{
+    width: 80%;
+}
+/*--------------------CONTACT------------------------*/
+.contact{
+	background: #FFFFFF;
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;  
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color: crimson;
+    background: none;
+}
+.dropbtn {
+display:inline-block;
+	text-decoration: none;
+	color:white;
+	border:1px solid #fff;
+	padding:12px 34px;
+	font-size:13px;
+	background: transparent;
+	position:relative;
+	cursor:pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  border :1px solid #041E73;
+	background : #041E73;
+	transition:1s;
+}
