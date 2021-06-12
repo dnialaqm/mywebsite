@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Danial Aqeem's Website</title>
+	
+	<!-- FontIcons -->
+	<link rel= "stylesheet" href= "css/all.css">
+	<link rel= "stylesheet" href= "css/font.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- CSS LINK -->
+	<link rel= "stylesheet" href= "css/devlin.css">
+	
+	
+	
+</head>
+
+<body>
+
+		<!--------------------------------------BODY-------------------------------------->
+<body bgcolor="#191414">
+		<div class="bar">
+				
+					<div class="title2">
+					<h1>Danial Aqeem</h1>
+					</div>
+			<div class ="main">
+				<div class="logo">
+				<img src="wolf.png">
+		
+					<nav class ="navbar">
+					  <ul>
+							<li><a href = "index.html">Home</a></li>
+							<li><a href = "portfolio.html">Portfolio</a></li>
+							<li><a href = "aboutme.html">About</a></li>
+							<li><a href = "songgallery.html">Song</a></li>
+						  	<li><a href = "contactme.html">Contact</a></li>
+
+						  
+						  	<frameset cols = "25%,*" border = "1" >
+				<frame src ="index.html" name = "left">
+				<frame src ="aboutme.html" name = "right" scrolling="yes" noresize>
+				<frame src ="portfolio.html" name = "right" scrolling="yes" noresize>
+				<frame src ="songgallery.html" name = "right" scrolling="yes" noresize>
+				<frame src ="contactme.html" name = "right" scrolling="yes" noresize>
+
+						  </frameset>
+					  </ul>
+				 	</nav>
+				</div>
+		    </div>
+	</div>
+			<br>
+			<br>
+			<br>
+			<br>
+
+		<!--------------------------------------CONTENT-------------------------------------->
+		  <section class="photo" id="photo">
+			  <h1 class="topic">SONG GENERATOR</h1>
+			  <br><br>
+	<h2>Please Fill the Form below to generate your playlist</h2>
+   		  </section>		
+	<br>
+	<section id="formation">
+		<form name="form" onsubmit="return handleClick();"  method="post">	
+	   <div class="row">
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+        </div>
+   
+    <div class="row">
+        <label>Email Address</label>
+        <input type="text" name="email" required>
+     </div>
+      <div class="row">
+        <label>Favourite Genre <i>(You can choose more than one)</i></label>
+      <div class="tick" >
+            <label><input type="checkbox" name="genre[]" value="Pop"> Pop</label>
+            <label><input type="checkbox" name="genre[]" value="Rock"> Rock</label>
+            <label><input type="checkbox" name="genre[]" value="Indie"> Indie</label>
+		   <label><input type="checkbox" name="genre[]" value="K-Pop"> K-Pop</label>
+		   <label><input type="checkbox" name="genre[]" value="Ballad"> Ballad</label>
+		  </div></div>
+		  <div class ="row">
+<select id="test" name="form_select" onchange="showDiv(this)" >
+	
+   <option value="n">SELECT ARTIST</option>
+   <option value="TaylorSwift">Taylor Swift</option>
+   <option value="MileyCyrus">Miley Cyrus</option>
+  <option value="BLACKPINK">BLACKPINK</option>
+   <option value="OliviaRodrigo">Olivia Rodrigo</option>
+  <option value="DAY6">DAY6</option>
+  <option value="EXO">EXO</option>
+  <option value="keshi">keshi</option>
+
+</select> </div>
+		   
+	<div id ="radioo0" style="display:none;" >
+  <input type="radio" name="myRadio"  value="SpeakNow" />Speak Now
+<input type="radio" name="myRadio"  value="reputation" />reputation
+		<input type="radio" name="myRadio"  value="1989" />1989
+
+	</div>
+	
+	<div id ="radioo1" style="display:none;" >
+  <input type="radio" name="myRadio"  value="PlasticHeart" />Plastic Heart
+<input type="radio" name="myRadio"  value="Bangerz" />Bangerz
+		<input type="radio" name="myRadio"  value="YoungerNow" />Younger Now
+	</div>
+	
+	<div id ="radioo2" style="display:none;" >
+  <input type="radio" name="myRadio"  value="TheAlbum" />The Album
+<input type="radio" name="myRadio"  value="SquareUp" />Square Up
+	</div>
+	
+	<div id ="radioo3" style="display:none;" >
+  <input type="radio" name="myRadio" value="SOUR" />SOUR
+	</div>
+	
+		<div id ="radioo4" style="display:none;" >
+  <input type="radio" name="myRadio"  value="TheBookOfUs:Negentropy" />The Book Of Us: Negentropy
+<input type="radio" name="myRadio"  value="SUNRISE" />SUNRISE
+			<input type="radio" name="myRadio"  value="TheBookOfUs:Entropy" />The Book Of Us: Entropy
+
+	</div>
+	
+	
+		<div id ="radioo5" style="display:none;" >
+<input type="radio" name="myRadio"  value="DontFightTheFeeling" />Don't Fight The Feeling
+		<input type="radio" name="myRadio"  value="XOXO" />XOXO
+			<input type="radio" name="myRadio"  value="LoveShot" />Love Shot
+	</div>
+	
+	
+		<div id ="radioo6" style="display:none;" >
+<input type="radio" name="myRadio"  value="THEREAPER" />THE REAPER
+		<input type="radio" name="myRadio"  value="besideyou" />beside you
+			<input type="radio" name="myRadio"  value="always" />always
+	</div>
+		 
+	<div class="row">
+      <center>  <input type="submit" value="Submit"></center>
+    </div>
+	<p id="demo"></p>
+
+	</form>
+	
+		</section>
+
+
+		<!--------------------------------------SONG GALLERY-------------------------------------->
+<script type="text/javascript">
+function showDiv(){
+		var selectvalue = document.form.form_select.value;
+   if(selectvalue=="TaylorSwift"){
+    document.getElementById('radioo0').style.display = "block";
+   } else{
+    document.getElementById('radioo0').style.display = "none";
+   }
+	
+	
+	 if(selectvalue=="MileyCyrus"){
+    document.getElementById('radioo1').style.display = "block";
+   } else{
+    document.getElementById('radioo1').style.display = "none";
+   }
+	
+	 if(selectvalue=="BLACKPINK"){
+    document.getElementById('radioo2').style.display = "block";
+   } else{
+    document.getElementById('radioo2').style.display = "none";
+   }
+	
+	 if(selectvalue=="OliviaRodrigo"){
+    document.getElementById('radioo3').style.display = "block";
+   } else{
+    document.getElementById('radioo3').style.display = "none";
+   }
+ 
+		 if(selectvalue=="DAY6"){
+    document.getElementById('radioo4').style.display = "block";
+   } else{
+    document.getElementById('radioo4').style.display = "none";
+   }
+
+	 if(selectvalue=="EXO"){
+    document.getElementById('radioo5').style.display = "block";
+   } else{
+    document.getElementById('radioo5').style.display = "none";
+   }
+
+	 if(selectvalue=="keshi"){
+    document.getElementById('radioo6').style.display = "block";
+   } else{
+    document.getElementById('radioo6').style.display = "none";
+   }
+} 
+function handleClick() {
+	
+		var selectvalue = document.form.form_select.value;
+			var radiovalue = document.form.myRadio.value;
+var name = document.form.name.value;
+	var email = document.form.email.value;
+    var genre = [];
+	  
+    var checkboxes = document.getElementsByName("genre[]");
+    for(var i=0; i < checkboxes.length; i++) {
+        if(checkboxes[i].checked) {
+            // Populate status array with selected values
+            genre.push(checkboxes[i].value);
+        }
+    }
+   var str = "Enjoy Your Music";
+	var result;
+ 
+ if(radiovalue == "SpeakNow"){
+result = str.link("https://open.spotify.com/album/6Ar2o9KCqcyYF9J0aQP3au?si=f4DoJHHaSDmH9u41Z3cigw&dl_branch=1");
+ }
+ if(radiovalue == "reputation"){
+result = str.link("https://open.spotify.com/album/6DEjYFkNZh67HP7R9PSZvv?si=85oCUyWmQpuHr46H1Tayew&dl_branch=1");
+ }
+ if(radiovalue == "1989"){
+result = str.link("https://open.spotify.com/album/1yGbNOtRIgdIiGHOEBaZWf?si=D28JUNVaQ0ih2s-wbcrZ2g&dl_branch=1");
+ }
+ if(radiovalue == "PlasticHeart"){
+result = str.link("https://open.spotify.com/album/5BRhg6NSEZOj0BR6Iz56fR?si=sGC22LxgQd23urQopZPLuw&dl_branch=1");
+ }
+ 
+ if(radiovalue == "Bangerz"){
+result = str.link("https://open.spotify.com/album/3RDqXDc1bAETps54MSSOW0?si=GcSHCXjLS3aAWdLXV48Otw&dl_branch=1");
+ }
+ if(radiovalue == "YoungerNow"){
+result = str.link("https://open.spotify.com/album/5xG9gJcs9ut3qDWezHUlsX?si=jx1EGsbaR4eS8ADrOY6d2Q&dl_branch=1");
+ }
+ if(radiovalue == "TheAlbum"){
+result = str.link("https://open.spotify.com/album/2gNPnKP1PDkB5SZz3IMKuX?si=8RaKvXp1RD6cZfJp-6a2og&dl_branch=1");
+ }
+ if(radiovalue == "SquareUp"){
+result = str.link("https://open.spotify.com/album/6yetqbA9vli7RLoUWYZLsq?si=Mk34jv83Q9aKq73VigK8IQ&dl_branch=1");
+ }
+ 
+ if(radiovalue == "SOUR"){
+result = str.link("https://open.spotify.com/album/6s84u2TUpR3wdUv4NgKA2j?si=36A05FHCQIS-suFGtyxEXQ&dl_branch=1");
+ }
+ if(radiovalue == "TheBookOfUs:Negentropy"){
+result = str.link("https://open.spotify.com/album/3Ss5rH4Ua4Z7bQzhWDbbsG");
+ }
+ if(radiovalue == "SUNRISE"){
+result = str.link("https://open.spotify.com/album/4B2Ijqpz9hRDqWraaDxLSS?si=kzTbR2bqTZC9bvIOoHJlkA&dl_branch=1");
+ }
+ if(radiovalue == "TheBookOfUs:Entropy"){
+result = str.link("https://open.spotify.com/album/3JX0hnu8b55RtbtEdUSYor?si=SO7FxnEaQK-I1xFigiDI4w&dl_branch=1");
+ }
+ 
+ if(radiovalue == "DontFightTheFeeling"){
+result = str.link("https://open.spotify.com/album/7Jw48lPmYuYftfQv5LmAzI?si=GLQy5StJSH-iD3fIJlqTJA&dl_branch=1");
+ }
+ if(radiovalue == "XOXO"){
+result = str.link("https://open.spotify.com/album/4qduCvpyBL5hGYdBvCvcDA?si=-K6QIeuFSgug8L59O8SJGg&dl_branch=1");
+ }
+ if(radiovalue == "LoveShot"){
+result = str.link("https://open.spotify.com/album/3r5m8utqRZYJnpep7xxVyq?si=G7IVfUfmSOmNmtfHHR5UmQ&dl_branch=1");
+ }
+ if(radiovalue == "THEREAPER"){
+result = str.link("https://open.spotify.com/album/1hM5xkleU8wr2yOaY2gCMB?si=czYXrlrSQ8irLhESLokYfg&dl_branch=1");
+ }
+ 
+ if(radiovalue == "besideyou"){
+result = str.link("https://open.spotify.com/album/3boOG8cQ8szHDizPKUyBFD?si=xBdPBo38Sbu04dPhHcKM7w&dl_branch=1");
+ }
+ if(radiovalue == "always"){
+result = str.link("https://open.spotify.com/album/37FLvUnF5qC1LZBNCWqG1A?si=TlWcpA-FQvqEfvtWgI5UFA&dl_branch=1");
+ }
+
+	
+    if((name|| email) != "" || (selectvalue=="n") || (radiovalue=="") || (!checkboxes[i].checked) ){
+
+        // Creating a string from input data for preview
+        var finalResult ="\nName :" + name  +"\n Email:" +  email + "\n Artist: " + selectvalue + "\n Album: "  +  radiovalue ;
+                   if(genre.length) {
+            finalResult += "\nYour Favourite Genre: " + genre.join(", ");
+        }
+        // Display input data in a dialog box before submitting the form
+        alert(finalResult);
+		       document.write("Your Playlist " + result);
+
+    }
+     else {
+		 alert("Invalid Input");}
+};
+	
+</script>
+
+
+
+		
+
+		<!--------------------------------------FOOTER-------------------------------------->
+			  <div class="footer">
+				 <center> 
+					 
+					 <div class="socmed"> 
+						   <a href="https://www.facebook.com/dnialaqm" class="fa fa-facebook"></a> <a href="https://www.instagram.com/dnialaqm/" class="fa fa-instagram"></a>
+							<a href="https://twitter.com/dnialaqm" class="fa fa-twitter"></a>
+							<a href="https://www.youtube.com/channel/UCvZqnUUGgZBSpLUE0XNLJ7A" class="fa fa-youtube"></a>
+					<hr size = "2" width = "1050px" align ="center">
+					<h6>2021 Danial Aqeem </h6>
+					<p> 
+					</p>
+					<h6>Made by Danial Aqeem . Copyright Claimed</h6>
+		  			</div>
+				</center>
+     		 </div>
+				  
+</body>				  
+
+				</body>
+</html>
