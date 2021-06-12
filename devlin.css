@@ -3,8 +3,8 @@
 /*------------------------------DEFAULT----------------------------------*/
 
 *{
- 	margin: 0;
-    padding: 0;
+	margin :0;
+	padding:0;
 
 }
 html{
@@ -68,11 +68,12 @@ section{
 	font-family:"Selima";
     position: absolute;
 }
+
 /*------------------------------HEADER----------------------------------*/
 .header {
 	position:absolute; 
-  background-color: #000000;
-  padding: 50px;
+	 background:transparent;
+	padding: 50px;
 	width:1000px;
   text-align: left;
 	top: 0%;
@@ -84,7 +85,7 @@ section{
 		font-family:  montserrat;
     top: 20%;
     left: 67%;
-	 background-color: #000000;
+	 background:transparent;
     position: absolute;
 	font-size:20;
 	 text-align: center;
@@ -118,11 +119,11 @@ section{
     font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 180px;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+
 }
 #home::before{
     content: "";
@@ -130,11 +131,13 @@ section{
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../wallhaven-0p7rqp.jpg") ;
-    height: 1100px;
+    background:linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../wallpaper2.jpeg") ;
+    height: 140%;
     width: 100%;
     z-index: -1;
+		background-repeat: no-repeat;
     opacity: 1.0;
+	background-size: cover;
 }
 .heading{
     color: white;
@@ -143,9 +146,51 @@ section{
     text-align: center;
     transform: scale(1,1.3);
 }
+.bar {
 
+  background:transparent;
+  padding-top: 40px;
+	width:1130px;
+	height:50px;
+  text-align: left;
+	top: 0%;
+    left: 0%;
+	position:absolute; 
 
-/*------------------------------EMAIL----------------------------------*/
+}
+#photo{
+	
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+#photo::before{
+    content: "";
+	
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../wallpaper2.jpeg") ;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+		background-repeat: no-repeat;
+    opacity: 1.0;
+	background-size: cover;
+}
+.topic{
+    color: white;
+    font-size: 1.6rem;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,1.3);
+}
 
 /*------------------------------ABOUT ME ----------------------------------*/
 
@@ -155,16 +200,20 @@ section{
 	font-family: montserrat;
     flex-direction: column;
     text-align: justify;
-    height: 100%;
+    height: 50%;
+	
 }
 #about h1{
     color: black;
 	    font-family: 'Poppins', sans-serif;
-    margin: 55px;
+    margin: 0px;
+
+
 }
 .about{
     display: flex;
     align-items: center;
+			margin-right:50px; 
     margin-bottom: 20px;
 }
 .about img{
@@ -184,11 +233,133 @@ section{
 }
 .row icon {
 	justify-content: center;
+
+}
+.row .icon ul{
+	list-style-type: none;
+}
+/*------------------------------TABLE----------------------------------*/
+
+#table{
+	background-color: #FFFFFF;
+    display: flex;
+	font-family: montserrat;
+    flex-direction: column;
+    text-align: justify;
+    height: 30%;
+	
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+margin:60px;
+	margin-left: 80px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.butang{
+		margin :10px 0 40px;
+
+display:inline-block;
+	text-decoration: none;
+	color:white;
+	border:1px solid #fff;
+	padding:12px 34px;
+	font-size:13px;
+	background: black;
+	cursor:pointer;
+	top :150%;
+	left:34%;
+	position :absolute;
+	width:300px;
+	text-align: center;
+}
+.butang:hover{
+	border :1px solid #f44336;
+	background : #f44336;
+	transition:1s;
+}
+/*------------------------------FORM----------------------------------*/
+
+#formation{
+	background:white;
+    display: flex;
+	font-family: montserrat;
+    flex-direction: column;
+    text-align: justify;
+    height: 30%;
+	
+}
+	
+	form {
+		color:white;
+    width: 300px;
+    background-image: url("../../../../Pictures/others/download.jpg");
+    padding: 15px 40px 40px;
+    border: 1px solid maroon;
+    margin: 50px auto 0;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 5px
+}
+label i {
+    color: #999;
+    font-size: 80%;
+}
+input, select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.row {
+    padding-bottom: 10px;
+}
+.tick {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+.tick label, .tick input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+
+input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+    background:white;
+	border:maroon;
+    color: black;
+    margin-top: 10px;
+    cursor: pointer;
+	width:200px;
+	justify-content: center;
+	border-radius: 20px;
+}
+input[type="submit"]:hover {
+    background: white;
 }
 /*------------------------------FOOTER----------------------------------*/
 .footer{
 	font-family:  montserrat;
-  background-color: #000000;
+  background-color:#0000;
 	color:white;
    padding: 100px;
 	width: 1065px;
@@ -223,7 +394,7 @@ section{
 	background-color: aliceblue;
 }
 .skills .title{
-	top:115%;
+	top:55%;
 	left:47%;
 position: absolute;
 	color: black;
@@ -395,6 +566,7 @@ position: absolute;
     color: crimson;
     background: none;
 }
+
 .dropbtn {
 display:inline-block;
 	text-decoration: none;
